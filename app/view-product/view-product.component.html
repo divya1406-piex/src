@@ -1,0 +1,44 @@
+<h1>
+    <div class="one"><img  src="../assets/img/11697.jpg" alt="" width="80px" height="80px"/>Grocery</div>
+  </h1>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(151, 168, 185);">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="" routerLinkActive="active" class="nav-link" style="color: white;" ><i class="bi-house-door"></i> Home</a>
+        </li>
+    </ul> 
+  </nav>
+
+  <div>
+  <h2 class="oe">Product <span style="color:rgb(255, 224, 47);">Details</span></h2>
+ 
+ <div class="container">
+  <div class="card" style="background-color:rgb(187, 244, 225)">
+    <div class="card-body">
+      <div >
+        <img src="{{product.image}}" style="width:200px;" alt=""/>
+    </div>
+    <br>
+    <div >
+        <label><b>Product Id: </b></label>{{product.pId}}
+    </div>
+    <br>
+      <div>
+          <label><b>Product Name: </b></label>{{product.pName}}
+      </div>
+      <br>
+      <div>
+        <label><b>Quantity: </b></label>{{product.qty}}
+    </div>
+    <br>
+    <div>
+        <label><b>Price: </b></label>{{product.price}}
+    </div>
+  </div>
+  <br/>
+  <br/>
+  <button (click)="cart()" class="btn btn-primary" style="margin-left: 50px;margin-right: 50px;">Back To Product List</button><br/>
+</div>
+</div>
+</div>
+<h3></h3>

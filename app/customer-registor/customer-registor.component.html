@@ -1,0 +1,72 @@
+<h1>
+  <div class="one"><img  src="../assets/img/11697.jpg" alt="" width="80px" height="80px"/>Grocery</div>
+</h1>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(151, 168, 185);">
+  <ul class = "navbar-nav">
+      <li class = "nav-item">
+          <a routerLink="" routerLinkActive="active" class="nav-link" style="color: white;" ><i class="bi-house-door"></i> Home</a>
+      </li>
+  </ul> 
+</nav>
+<div style="background-image: url('https://th.bing.com/th/id/R.6f93b35516a157d1c6e4968f3b24de2d?rik=y%2flnDZ%2fnE8OKpQ&riu=http%3a%2f%2fwallpapersdsc.net%2fwp-content%2fuploads%2f2016%2f09%2fFood-HD-Desktop.jpg&ehk=umUNK%2fLxuQ%2fAVeDlV4vyXabWszwok8Stirm72bzv6Y8%3d&risl=&pid=ImgRaw&r=0');height: 100%;background-position: center;background-repeat: no-repeat; background-size: cover;background-attachment: fixed;">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-4">
+          <h2 style="text-align: center;"class="fw-bold mb-5"><b style="color:mediumblue">Register</b></h2>
+          <form #registerform="ngForm" (ngSubmit)="customerRegister()">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row">
+              <h3 style="color:white;">Enter</h3>
+              <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                  <input type="text" name="firstName" class="form-control" placeholder="First Name" [(ngModel)]="customer.fName" required #firstname="ngModel"
+                  [class.is-invalid]="firstname.invalid&&firstname.touched"/>
+                  <small class="text-danger" [class.d-none]="firstname.valid||firstname.untouched">Required field</small>
+    </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                  <input type="text" name="lastName" class="form-control" placeholder="Last Name"[(ngModel)]="customer.lName" required #lastName="ngModel"
+                  [class.is-invalid]="lastName.invalid&&lastName.touched"/>
+                  <small class="text-danger" [class.d-none]="lastName.valid||lastName.untouched">Required field</small> 
+                  </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" name="phoneNo" class="form-control" placeholder="Phone Number"[(ngModel)]="customer.phoneNo" required #phoneNo="ngModel"
+                      [class.is-invalid]="phoneNo.invalid&&phoneNo.touched"/>
+                      <small class="text-danger" [class.d-none]="phoneNo.valid||phoneNo.untouched">Required field</small>
+                      </div>
+                      </div>
+                      <div class="col-md-6 mb-4">
+                        <div class="form-outline">
+                          <input type="text" name="address" class="form-control" placeholder="Address"[(ngModel)]="customer.address" />
+                          </div>
+                          </div>
+                          <div class="col-md-6 mb-4">
+                            <div class="form-outline">
+                              <input type="email" name="userName" class="form-control" placeholder="Email"[(ngModel)]="customer.userName" required #userName="ngModel"
+                              [class.is-invalid]="userName.invalid&&userName.touched"/>
+                              <small class="text-danger" [class.d-none]="userName.valid||userName.untouched">Required field</small>
+                              </div>
+                              </div>
+                              <div class="col-md-6 mb-4">
+                                <div class="form-outline">
+                                  <input type="password" name="password" class="form-control" placeholder="Password"[(ngModel)]="customer.password" required #password="ngModel"
+                                  [class.is-invalid]="password.invalid&&password.touched"/>
+                                  <small class="text-danger" [class.d-none]="password.valid||password.untouched">Required field</small>
+                                  </div>
+                                  </div>
+                                 
+<!-- Submit button -->
+<button type="submit" class="btn btn-primary btn-block mb-4">
+    Register
+   </button>
+   <div style="text-align: right;">
+   <a routerLink="/customerlogin" routerLinkActive="active" class="nav-link" ><b style="color:white">Existed Customer?</b> <b style="color: yellow;">Login now</b></a></div>
+            </div>
+</form></div>
+
+<div><br/><br/><br><br><br><br>
+<span id="copyright"style="text-align:center"><b style="color: oldlace;">&reg;All rights reserved</b></span>
+
+</div>

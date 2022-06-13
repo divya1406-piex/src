@@ -1,0 +1,32 @@
+.one
+{
+    color:red;
+}
+div{
+    margin-bottom: 10px;
+}
+label{
+    display: inline-block;
+    width: 150px;
+    margin-left: 250px;
+}
+button{
+    text-align: center;
+    margin-left: 250px;
+    width: 350px;
+    /* height: 70px; */
+}
+h2{
+    color: rgb(98, 187, 242);
+    text-align: center;
+}
+.card
+{
+  padding-bottom: 10%;
+  width: 850px;
+  height:570px;
+  margin-left: 200px;
+  border-radius: 10px;
+  background-color: rgb(252, 252, 135);
+ /* text-align: center;*/
+}

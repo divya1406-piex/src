@@ -1,0 +1,43 @@
+.one
+{
+    color:red;
+}
+/* .btn-light{
+    background-color:rgba(205, 203, 203);
+    height:20px;
+    width: 15px ;
+} */
+div{
+    margin-bottom: 10px;
+}
+label{
+    display: inline-block;
+    width: 150px;
+    margin-left: 250px;
+}
+ button{
+    text-align: center;
+    margin-left: 250px;
+    width: 350px;
+} 
+h2{
+    color: rgb(98, 187, 242);
+    text-align: center;
+}
+.card
+{
+  padding-bottom: 10%;
+  width: 850px;
+  height:570px;
+  margin-left: 200px;
+  border-radius: 10px;
+  background-color: rgb(252, 252, 135);
+ /* text-align: center;*/
+}
+h3{
+    color:rgb(98, 187, 242) ;
+    text-align: center;
+}
+.rad{
+    text-align: center;
+}

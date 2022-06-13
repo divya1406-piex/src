@@ -1,0 +1,42 @@
+<h1>
+  <div class="one"><img  src="../assets/img/11697.jpg" alt="" width="80px" height="80px"/>Grocery</div>
+</h1>
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(151, 168, 185);">
+  <ul class = "navbar-nav">
+      <li class = "nav-item">
+          <a routerLink="" routerLinkActive="active" class="nav-link" style="color: white;" ><i class="bi-house-door"></i> Home</a>
+      </li>
+  </ul> 
+  <ul class = "navbar-nav">
+    <li class = "nav-item">
+        <a routerLink="/customerregister" routerLinkActive="active" class="nav-link" style="color: white;" >Back</a>
+    </li>
+</ul> 
+</nav>
+<div style="background-image: url('https://i.pinimg.com/originals/8e/da/14/8eda14e968e031fb89523ece39ff8e11.jpg');background-repeat: no-repeat;background-attachment: fixed; background-size: cover;width: 100%;height:100%;">
+  <br>
+  <br><br><br><br>
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-4">
+          <h2 style="text-align: center;"class="fw-bold mb-5"><b style="color:rgb(15, 38, 241)" >Login</b></h2>
+          <form #loginform="ngForm" (ngSubmit)="customerLogin()">
+            <small class="text-danger">{{message}}</small>
+          
+            <div class="form-outline mb-4">
+              <label for="email" style="color: solid black;"><b>UserName</b></label>
+              <input type="email" name="email" class="form-control" placeholder="Email " [(ngModel)]="customer.userName"/>
+             
+             </div>
+    
+            <div class="form-outline mb-4">
+              <label for="password" style="color: solid black;"><b>Password</b></label>
+              <input type="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="customer.password" />
+            </div>
+            <!-- <button (click)="onClick()" style="background-color: transparent;border-color: transparent;"><b style="color:white">Forgot Password?</b></button>
+            <br> -->
+            <button type="submit" class="btn btn-primary btn-block mb-4">Login</button>   
+
+          </form></div>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div id="copyright"style="text-align:center"><b style="color: oldlace;">&reg;All rights reserved</b></div>
+    </div></div>

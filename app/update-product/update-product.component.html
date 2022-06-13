@@ -1,0 +1,46 @@
+<h1>
+    <div class="one"><img  src="../assets/img/11697.jpg" alt="" width="80px" height="80px"/>Grocery</div>
+  </h1>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(151, 168, 185);">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+       <a routerLink="" routerLinkActive="active" class="nav-link" style="color: white;" ><i class="bi-house-door"></i> Home</a>
+        </li>
+    </ul> 
+  </nav>
+  <br>
+  <h1 style="text-align: center;">Update <span style="color: yellow;">Product</span></h1>
+<br>
+<div class="container">
+    <div class="card" style="background-color: rgb(255, 193, 255);">  
+      <div class="card-body">
+<!--<div [hidden]="submitted" style="width: 400px;">-->
+<div>   
+  <div class="container"> 
+<form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input type="text" class="form-control" id="image" required [(ngModel)]="product.image" name="image"/>
+          </div>
+          <br>
+        <div class="form-group">
+        <label for="pName">Product Name</label>
+        <input type="text" class="form-control" id="pName" required [(ngModel)]="product.pName" name="pName"/>
+        </div>
+        <br>
+        <div class="form-group">
+        <label for="qty">Quantity</label>
+        <input type="text" class="form-control" id="qty" required [(ngModel)]="product.qty" name="qty"/>
+       </div>
+       <br>
+        <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" class="form-control" id="price" required [(ngModel)]="product.price" name="price"/>
+       </div>
+       <br>
+       <button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,53 @@
+<h1>
+    <div class="one"><img  src="../assets/img/11697.jpg" alt="" width="80px" height="80px"/>Grocery</div>
+  </h1>
+  <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:rgb(151, 168, 185);">
+    <ul class = "navbar-nav">
+        <li class = "nav-item">
+            <a routerLink="" routerLinkActive="active" class="nav-link" style="color: white;" ><i class="bi-house-door"></i> Home</a>
+        </li>
+    </ul> 
+    <ul class = "navbar-nav">
+      <li class = "nav-item">
+          <a routerLink="/payment" routerLinkActive="active" class="nav-link" style="color: white;" >Back</a>
+      </li>
+  </ul> 
+  </nav>
+  <div style="background-color: lightsalmon;">
+<div class="container" >
+    <div class="card" >
+ <form>
+        <br>
+        <div><h2>Credit Card</h2></div>
+        <br><br>
+        <div class=" mb-3">
+            <label for="name"><b>Card Owner: </b></label>
+            <input type="text" id="name" name="name" placeholder="  Card Owner Name" required />
+        </div>
+        <br>
+        <br>
+        <div class="mb-3">
+                    <label for="name"><b>Card Number: </b></label>
+                    <input type="text" name="card number" placeholder="  0000 0000 0000 0000" required [(ngModel)]="payment.cardNo" />
+        </div>
+        <br>
+        <br>
+        <div class="mb-3">
+            <label for="Expiry"><b>Expiry Date: </b></label>
+            <input type="text" id="Expiry" name="Expiry" placeholder="  MM/YY" required /> 
+        </div>
+        <br>
+        <br>
+        <div class="mb-3">
+            <label for="name"><b>CVV: </b></label>
+            <input type="password" name="card number" placeholder="  &#9679;&#9679;&#9679;" minlength="3" maxlength="3" required />
+        </div>
+        <br>
+        <br>
+        <div>
+            <button (click)="onClick()" type="button" class="btn btn-primary">Pay ₹ {{payment.totalAmount}}</button>
+        </div>
+    </form>
+</div>
+    </div>
+</div>
